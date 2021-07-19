@@ -10,4 +10,3 @@ Armarios = Arquivos
 
 Sql é uma linguagem de consulta 
 Structure query langue
-
