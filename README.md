@@ -48,3 +48,13 @@ create table pessoas(
     nascionalidade varchar(20),
     altura float
 );
+
+parametros chamamos de constrants no mysql
+
+create database cadastro 
+
+default character set utf8
+
+definição dos caracteres 
+default collate utf8_general_ci
+
