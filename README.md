@@ -58,3 +58,15 @@ default character set utf8
 definição dos caracteres 
 default collate utf8_general_ci
 
+create table pessoas(
+	id int not null auto_increment, 
+    nome varchar(30) not null,
+    nascimento date, 
+    sexo enum('M', 'F'),
+    peso decimal(5,2), 
+    nascionalidade varchar(20) default 'brasil',
+    altura decimal(3,2),
+    primary key(id)
+)default charset=utf8;f8;
+
+TUPLA = REGISTRO 
