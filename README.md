@@ -70,3 +70,67 @@ create table pessoas(
 )default charset=utf8;f8;
 
 TUPLA = REGISTRO 
+
+Comandos DDL significa data definition language 
+
+LINGUAGEM DE DEFINIÇÂO DE DADOS
+
+Comandos DDL CREATE TABLE, create database, 
+
+insert into pessoas
+(id nome, nascimento, sexo, peso, altura, nascionalidade) 
+values
+(default 'Godofredo', '2010-10-10', 'M', 59, 1.49, 'BRASIL');
+
+sem informar os campos a ordem deve ser respeitada ( ordem de criação )
+(id nome, nascimento, sexo, peso, altura, nascionalidade) 
+
+
+insert into pessoas
+values
+(default, 'adalgiza', '1910-10-10', 'M', 54.0, 'IRLANDA',1.49 );
+
+para inserir varios registros só separar por virgula, 
+
+insert into pessoas
+values
+(default, 'ruam', '1910-10-10', 'M', 54.0, 'IRLANDA',1.58 ), 
+(default, 'claudio', '1910-12-10', 'M', 65.0, 'ITALIA',1.69 ), 
+(default, 'miguel', '1910-05-10', 'M', 94.0, 'EUA',1.99 );
+
+DML DATA MANIPULATION LANGUAGE INSERT INTO 
+
+/**ADD COLUN */
+alter table pessoas add column profissao varchar (10);
+
+
+/** DROP COLUN  **/
+alter table pessoas 
+drop column profissao;
+
+/**ADD COLUN position especifica  */
+alter table pessoas add column profissao varchar (10) after nome;
+/** 
+	firs 1 campo, sem nenhum marcador o ultimo e after após 
+	Modify pode redefinir as contrantis e alterar os tipos primitivos do campos, 
+**/
+alter table pessoas 
+modify column profissao varchar (20) not null;
+
+/**
+	change mudar nome da coluna 
+**/
+alter table pessoas change column profissao prof varchar(20);
+
+/**
+	rename to renomea a tabela 
+**/
+alter table pessoas rename to gafanhotos;
+
+create table if not exists cursos (
+nome varchar(30) not null unique ,
+descricao text, 
+carga int unsigned, 
+totaulas int, 
+ano year default '2021'
+) default charset='utf8';
