@@ -100,3 +100,5 @@ truncate cursos;
 	comandos da aula de hoje
     DML UPDATE DELETE TRUNCATE 
 */
+
+drop database cadastro;
