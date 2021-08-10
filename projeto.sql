@@ -57,7 +57,46 @@ add column idcurso int first;
 
 alter table cursos
 add primary key (idcurso);
+/* 
+	COMANDOS DA AULA 06
+    COMANDOS DDL 
+    CREATE DATABASE
+    CREATE TABLE
+    ALTER TABLE
+    DROP TABLE
+    
+    COMANDOS DML 
+    INSERT INTO 
+    UPDATE 
+    DELETE 
+    TRUNCATE 
+ */
 
-
+/** AULA 07 **/
 
 describe cursos;
+
+
+insert into cursos values 
+('4', 'BD', 'CURSO BD', '40', '43', '2022'),
+('5', 'SCSS', 'Curso SCSS', '20', '23', '2023');
+
+select * from cursos;
+
+/* update um campo */
+update cursos 
+set nome = 'HTML 5' 
+where idcurso = 1;
+/* update varios campos */
+update cursos set nome='PHP', ano='2015' 
+where idcurso = '3';
+
+/* delete tuplas   especificas*/
+delete from cursos where idcurso = 5;
+
+/* apagar todos as linhas  */
+truncate cursos;
+/* 
+	comandos da aula de hoje
+    DML UPDATE DELETE TRUNCATE 
+*/
