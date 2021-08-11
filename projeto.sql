@@ -102,3 +102,11 @@ truncate cursos;
 */
 
 drop database cadastro;
+
+/*
+    Aula 9 
+    abrir via cmd o mysql no xampp 
+    cd c:\xampp\mysql\bin
+    mysql.exe -u root --password
+*/
+
