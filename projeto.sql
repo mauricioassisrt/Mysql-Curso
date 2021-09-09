@@ -110,3 +110,7 @@ drop database cadastro;
     mysql.exe -u root --password
 */
 
+/*
+    Aula 10 FOI SOBRE PHP MY ADMIN
+*/
+
