@@ -109,8 +109,3 @@ drop database cadastro;
     cd c:\xampp\mysql\bin
     mysql.exe -u root --password
 */
-
-/*
-    Aula 10 FOI SOBRE PHP MY ADMIN
-*/
-
